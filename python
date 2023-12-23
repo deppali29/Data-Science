@@ -1,1 +1,74 @@
-print("hi")
+#Basic Python variables
+#1
+x=10
+y=20
+print ("Before swap","\nx=", x,"\ny=", y)
+x=x + y
+y=x - y
+x=x - y
+print ("After swap","\nx=", x,"\ny=",y)
+ 
+#2 
+w = float(input('Please Enter the Width of a Rectangle: '))
+h = float(input('Please Enter the Height of a Rectangle: '))
+
+# calculate the area
+Area = w * h
+
+print("\n Area of a Rectangle is: %.2f" %Area)
+
+#3
+celsius = int(input("Enter the Temperature in Celsius :\n"))
+fahrenheit = (1.8 * celsius) + 32
+print("Temperature in Fahrenheit :", fahrenheit)
+    
+#String Based Questions
+
+
+#1
+str = "Deepali"
+print(len(str))
+#2
+string= input("Enter string:")
+vowels=0
+for i in string:
+      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+print("Number of vowels are:")
+print(vowels)
+
+#3
+String = 'ASTRING'
+ 
+# Using slice constructor
+s1 = slice(3)
+s2 = slice(1, 5, 2)
+s3 = slice(-1, -12, -2)
+ 
+print("String slicing")
+print(String[s1])
+print(String[s2])
+print(String[s3])
+
+#4
+def isPalindrome(s):
+    return s == s[::-1]
+ 
+ 
+# Driver code
+s = input("Enter string")
+ans = isPalindrome(s)
+ 
+if ans:
+    print("Yes")
+else:
+    print("No")
+    
+#5
+def remove(string):
+    return string.replace(" ", "")
+ 
+ 
+# Driver Program
+string = input("Enter string")
+print(remove(string))
